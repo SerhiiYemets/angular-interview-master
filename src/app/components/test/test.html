@@ -1,0 +1,11 @@
+<div>
+  <p>Це test компонент</p>
+  <p>{{title}}</p>
+  <p>{{getFullName()}}</p>
+
+  <p [ngStyle]="{color: 'red'}">Тут задействовано ngStyle</p>
+  <p [ngClass]="{'active': isActive, 'disabled': isDisabled}">Тут задействован ngClass</p>
+
+  <button [disabled]="!isEnabled">Click me</button>
+</div>
+

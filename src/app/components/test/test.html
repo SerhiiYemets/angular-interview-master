@@ -1,11 +1,23 @@
 <div>
   <p>Це test компонент</p>
   <p>{{title}}</p>
-  <p>{{getFullName()}}</p>
+  <!-- <p>{{getFullName()}}</p>
 
   <p [ngStyle]="{color: 'red'}">Тут задействовано ngStyle</p>
-  <p [ngClass]="{'active': isActive, 'disabled': isDisabled}">Тут задействован ngClass</p>
+  <p [ngClass]="{'active': isActive, 'disabled': isDisabled}">Тут задействован ngClass</p> -->
 
-  <button [disabled]="!isEnabled">Click me</button>
+  <!-- <button [disabled]="!isEnabled">Click me</button> -->
+
+  <!-- <div class="event-example" [ngClass]="{'clicked': isClickedState}"></div>
+
+  <button (click)="toggleState()">Перемкни стайт</button> -->
+<!--
+  <input type="text" [(ngModel)]="inputText" />
+  <p>{{ inputText  }}</p> -->
+
+  <p> {{ childMessage }} </p>
+
+  <button (click)="sendMessageToParent()">Отправь письмо отцу! </button>
+
 </div>
 

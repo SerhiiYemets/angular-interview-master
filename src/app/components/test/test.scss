@@ -108,3 +108,22 @@ button {
   }
 }
 
+.event-example {
+  width: 200px;
+  height: 100px;
+  margin: 20px auto;
+  padding: 0;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #333;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+
+  &.clicked {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+}
+

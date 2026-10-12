@@ -1,3 +1,5 @@
 <p>Це арр компонент</p>
 
-<app-test></app-test>
+<p>{{messageFromChild}}</p>
+
+<app-test [childMessage]="messageFromParent" (messageFromChild)="getMessageFromChild($event)"></app-test>

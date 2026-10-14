@@ -1,6 +1,6 @@
 <div>
   <p>Це test компонент</p>
-  <p>{{title}}</p>
+  <!-- <p>{{title}}</p> -->
   <!-- <p>{{getFullName()}}</p>
 
   <p [ngStyle]="{color: 'red'}">Тут задействовано ngStyle</p>
@@ -14,10 +14,38 @@
 <!--
   <input type="text" [(ngModel)]="inputText" />
   <p>{{ inputText  }}</p> -->
-
+<!--
   <p> {{ childMessage }} </p>
 
-  <button (click)="sendMessageToParent()">Отправь письмо отцу! </button>
+  <button (click)="sendMessageToParent()">Отправь письмо отцу! </button> -->
+  <!-- <p appHighlight [highlightColor]="'red'">Наведите курсор что увидеть ефект</p> -->
+
+  <!-- @if (isClickedState) {
+    <p>Кнопку нажали</p>
+  } @else {
+    <p>Кнопку еще не нажали!</p>
+  }
+  <button (click)="toggleState()">перемкни стейт</button> -->
+
+  <!-- <ul>
+    @for (item of items; track item.id; let idx = $index, e = $even) {
+      <li>Фрукт №{{ idx + 1 }}: {{ item.name }}</li>
+    } @empty {
+      <li>There are no items.</li>
+    }
+  </ul> -->
+
+    @switch (appState) {
+    @case ('active') {
+      <p>Аплікація активна</p>
+    }
+    @case ('paused') {
+      <p>Аплікація призупинена</p>
+    }
+    @default {
+      <p>Стан аплікації невідомий</p>
+    }
+  }
 
 </div>
 

@@ -2,9 +2,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Highlight } from '../../directives/highlight'
+import { TrancatePipe } from '../pipes/trancate-pipe';
 
 @Component({
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TrancatePipe ],
   selector: 'app-test',
   styleUrl: './test.scss',
   templateUrl: './test.html',
@@ -32,7 +33,8 @@ export class Test {
     {"id": 5, "name": "черешня"},
   ]
 
-
+  today = new Date();
+  longText = "Очень долгий текст, который нужно обрезать"
 
   @Input() childMessage: string = '';
 
